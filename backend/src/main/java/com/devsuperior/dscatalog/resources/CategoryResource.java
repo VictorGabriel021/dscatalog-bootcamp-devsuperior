@@ -40,7 +40,7 @@ public class CategoryResource {
 		dto = service.insert(dto);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
 				.buildAndExpand(dto.getId()).toUri();
-				
+		
 		return ResponseEntity.created(uri).body(dto);
 	}
 }
