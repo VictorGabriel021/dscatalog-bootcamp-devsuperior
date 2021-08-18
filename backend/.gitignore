@@ -33,7 +33,3 @@ build/
 .vscode/
 
 .metadata
-.mvn
-
-mvnw
-mvnw.cmd
