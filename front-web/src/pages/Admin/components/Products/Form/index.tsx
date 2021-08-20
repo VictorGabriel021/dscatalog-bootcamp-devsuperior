@@ -1,4 +1,4 @@
-import { makeRequest } from 'core/utils/request';
+import { makePrivateRequest } from 'core/utils/request';
 import React, { useState } from 'react';
 import Baseform from '../../BaseForm';
 import './styles.scss';
@@ -34,7 +34,7 @@ const Form = () => {
       imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvbyZmZqZfPU7HT3H4FDX_1QW6br9NyGVgCQ&usqp=CAU',
       categories: [{ id: formData.category }]
     }
-    makeRequest({ url: '/products', method: 'POST', data: payload })
+    makePrivateRequest({ url: '/products', method: 'POST', data: payload })
       .then(() => {
         setFormData({ name: '', category: '', price:'', description: ''});
       });
