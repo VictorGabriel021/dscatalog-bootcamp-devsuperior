@@ -1,4 +1,3 @@
-import React from 'react';
 import { Router, Switch, Route, Redirect } from 'react-router-dom';
 import Navbar from './core/components/Navbar';
 import Admin from './pages/Admin';
