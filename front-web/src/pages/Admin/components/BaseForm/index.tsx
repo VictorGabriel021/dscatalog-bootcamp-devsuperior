@@ -15,7 +15,7 @@ const Baseform = ({ title, children }: Props) => {
   }
 
   return (
-    <div className="admin-base-form card-base border-radius-20">
+    <div className="admin-base-form card-base">
       <h1 className="base-from-title">
         {title}
       </h1>
