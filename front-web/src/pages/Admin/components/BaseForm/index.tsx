@@ -4,7 +4,7 @@ import './styles.scss';
 
 type Props = {
   title: string;
-  children:React.ReactNode;
+  children: React.ReactNode;
 }
 
 const Baseform = ({ title, children }: Props) => {
@@ -21,14 +21,14 @@ const Baseform = ({ title, children }: Props) => {
       </h1>
       {children}
       <div className="base-form-actions">
-        <button 
+        <button
           className="btn btn-outline-danger border-radius-10 mr-3"
           onClick={handleCancel}
         >
           CANCELAR
         </button>
         <button className="btn btn-primary border-radius-10">
-          CADASTRAR
+          SALVAR
         </button>
       </div>
     </div>
